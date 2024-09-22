@@ -16,8 +16,8 @@ jobs:
 
       - name: output 디렉토리 준비
         run: |
-          mkdir output
-          cp -R ./* ./output/
+          mkdir -p output
+          rsync -av --exclude='output' . ./output/
 
       - name: 포크한 레포지토리로 푸시
         id: push_directory
