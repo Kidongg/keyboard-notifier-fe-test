@@ -1,5 +1,6 @@
 #!/bin/sh
+
 cd ../
 mkdir output
-cp -R ./team-repository-name/* ./output
-cp -R ./output ./team-repository-name/
+cp -R ./keyboard-notifier-fe-test/* ./output
+cp -R ./output ./keyboard-notifier-fe-test/
